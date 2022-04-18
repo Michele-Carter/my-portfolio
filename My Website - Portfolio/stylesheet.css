@@ -1,0 +1,180 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.main-container {
+	width: 960px;
+}
+
+h1, h2, h3, p, a, li {
+	font-family:'open sans', 'helvetica', 'sans-serif';
+}
+
+h1 {
+	margin-top: 20px;
+	color: #545775;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+
+h2 {
+	color: #5f9ea0;
+}
+
+h3 {
+	text-align: center;
+	color: #90BAAD;
+}
+
+p {
+	line-height: 130%;
+	text-align: justify;
+}
+
+
+/* INDEX PAGE */
+.photo-me {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+
+#quote {
+	width: 280px;
+	float: right;
+	background-color: #545775;
+	color: #ffffff;	
+	text-align: center;
+	vertical-align: middle;
+	font-style: italic;
+	padding: 20px;
+	margin-left: 20px;
+	margin-top: 9px;
+	box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+
+
+/* EXAMPLES PAGE */
+/* Row of examples */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+  
+/* Examples containers */
+.content {
+	height: 460px;
+	margin: .5rem;
+	display: flex;
+	width: min-content;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 10px;
+	border: solid thin #c0c0c0;
+	box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+
+/* Example images */
+.img-example {
+	height: 195px;
+	width: 195px;
+}
+
+/* Align examples text */
+.paragraph {
+	text-align: center;
+}
+
+
+/* BACKGROUND PAGE */
+/* Paragraph positioning and styling */
+.top-para, .bottom-para {
+	display: flex;
+	text-align: justify;
+}
+
+/* Paragraph styling */
+.para {
+	padding: 1em;
+}
+
+.h2-centered {
+	text-align: center;
+}
+
+
+/* SKILLS PAGE */
+.skills-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/* Skills list postitioning*/
+.skills-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 30px;
+}
+
+.skills-img {
+	height: 120px;
+	box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+
+/* Bulleted skills list */
+.bullets {
+	padding: 0px;
+}
+
+/* Skills list items */
+.bullets li {
+	margin: .10rem 1rem;
+	list-style-position: inside;
+}
+
+/* Website pic */
+.image-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* max-width: 500px; */
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+#mower-img {
+	max-width: 100%;
+	height: auto;
+}
+
+#contact {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* FOOTER AREA */
+.footer-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	text-align: center;
+	border-top: thin solid #545775;
+	border-bottom: thin solid #545775;
+	color: #545775;
+}
+

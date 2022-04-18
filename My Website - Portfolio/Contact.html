@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<title>Contact Me</title>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+	<link href="navstylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="media.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" integrity="sha512-i8+QythOYyQke6XbStjt9T4yQHhhM+9Y9yTY1fOxoDQwsQpKMEpIoSQZ8mVomtnVCf9PBvoQDnKl06gGOOD19Q==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header>
+            <h1>Michele Carter - Portfolio</h1>
+        </header>
+
+		<!--Main nav-->
+        <div class="nav-area">
+			<nav class="nav-bar">
+				<ul class="nav-list">
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Examples.html">Examples</a></li>
+					<li><a href="Background.html">Background</a></li>
+					<li><a href="Skills.html">Skills</a></li>
+					<li><a href="Why.html">Why</a></li>
+					<li><a class="current" href="Contact.html">Contact</a></li>
+					</ul>
+			</nav>
+
+			<!--burger nav-->
+			<nav id="burger-nav-container">
+				<span id="burger-nav" class="material-icons-outlined">menu</span>
+					<ul id="burger-list" class="burger-list hidden">
+						<li><a href="Index.html">Home</a></li>
+						<li><a href="Examples.html">Examples</a></li>
+						<li><a href="Background.html">Background</a></li>
+						<li><a href="Skills.html">Skills</a></li>
+						<li><a href="Why.html">Why</a></li>
+						<li><a class="current" href="Contact.html">Contact</a></li>
+					</ul>
+			</nav>
+		</div>
+
+		<main id="contact-main">
+			<section id="contact">
+				<h2 id="h2-contact">Contact Me</h2>
+				<form action="form-submit.php" method="post">
+           			<fieldset>
+                		<legend>Personal Information</legend>
+                		<br>
+                		<label for="first-name">Your name:</label><br>
+                		<input type="text" name="first name" autofocus required id="first-name" size="40"/>
+                		<br>
+                		<br>
+                		<label for="email">Email:</label><br>
+                		<input type="email" name="email" placeholder="enter a valid email address" required id="email" size="40"/><br><br>
+            		</fieldset>
+					<br>
+					<br>
+			       	<fieldset>
+                		<legend>Your Message</legend><br>
+                		<textarea name="message" id="message" cols="50" rows="15">Your message here</textarea><br>
+            		</fieldset>
+            		<br/>
+            		<input id="submit" type="submit" value="Send"/>
+        		</form>
+			</section>
+		</main>
+
+        <div class="footer-content">
+			<footer class="footer">
+				<p>copyright &copy;2021 Michele Carter</p>
+			</footer>
+		</div>
+    </div>
+	<script src="script.js"></script>
+	<img src="up-chevron.png" id="backtop" onclick="totop()"/>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* Main navigation bar */
+/* Main nav bar styling */
+.nav-bar {
+	display: flex;
+	width: 100%;
+	height: 32px;
+	padding: 10px 0;
+	align-items: center;
+	border-top: thin solid #545775 ;
+	border-bottom: thin solid #545775 ;
+}
+
+/* Main nav bar list items styling */
+.nav-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+}
+
+/* Highlight current page in nav bar */
+.nav-list .current {
+	color: #66D7D1;
+}
+
+/* Nav bar link colour */
+nav a:link, nav a:visited {
+	color: #708090;
+	padding: 5px 10px;
+}
+
+/* Link mouse over colour */
+nav a:hover {
+	background-color: #f0f8ff;
+}
+
+
+/* IN PAGE LINKS ON THE INDEX PAGE */
+/* Link colours */
+a:link, a:visited {
+	text-decoration: none;
+	color: #66D7D1;
+	font-weight: bold;	
+}
+
+/* Link hover colour */
+a:hover {
+	background-color: #f0f8ff;
+}
+
+
+/* BURGER NAV */
+/* Burger nav icon positioning */
+#burger-nav-container {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+   	width: 50%;
+    margin: auto;
+}
+
+.burger-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+#burger-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	padding: .05rem .25rem;
+	width: 100%;
+   	border: thin solid #c0c0c0;
+	border-radius: 3px;
+   }
+
+.burger-list .current {
+    color: #32cd32;
+}
+
+/* Hides the buger menu */
+.hidden {
+	display: none;
+}
+
+/*  Burger menu icon styling */
+.material-icons-outlined {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	color: #66D7D1;
+	font-size: 32px;  
+	display: block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	cursor: pointer;
+  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+#backtop {
+	/* (B1) BOTTOM RIGHT CORNER */
+	position: fixed;
+	bottom: 20px; right: 20px;
+	z-index: 999;
+  
+	/* (B2) HIDDEN BY DEFAULT */
+	visibility: none;
+	opacity: 0;
+  
+	/* (B3) COSMETICS */
+	cursor: pointer;
+	transition: opacity 0.3s;
+	width: 30px;
+    height: 30px;
+  }
+  
+  /* (B4) SHOW BUTTON */
+  #backtop.show {
+	visibility: visible;
+	opacity: 1;
+  }
